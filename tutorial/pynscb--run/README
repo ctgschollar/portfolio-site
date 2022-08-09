@@ -1,1 +1,5 @@
 Tutorial from https://angular.io/start
+
+Useful commands
+#Generate a new component (called product-alerts)
+ng generate component product-alerts
