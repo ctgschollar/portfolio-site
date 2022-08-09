@@ -15,32 +15,41 @@ Some useful Info
 * [] used to access set a html tag to a computed value
 * Components are imported for access everywhere in the app.module.ts file.
   * If we want to delete a module, delete the folder and remove references to it
-  from the app.module.ts file (and any other module it is used in)
+    from the app.module.ts file (and any other module it is used in)
 * Routes are defined in the app.module.ts file
   * : means that part of the route will be in a variable in the component at
-  that route
+    that route
   * [routerLink] used to create a link using the router
 * Pass data into a component with Input
   * This creates a parameter you can use when you create the component in the
-  parent
+    parent
 * Pass data out of a component with Output
   * This creates a parameter that can be accessed by the parent component
   * Use EventEmitter to make this an event that can be triggered
 * The fat arrow => is used in 2 ways
   * Create an anonymous function where it takes parameters on the left of the
-  arrow and returns what is on the right of the arrow
+    arrow and returns what is on the right of the arrow
     * x => x === 2 takes a value x and returns True if x is equal to 2
 * Type definitions
   * In TypeScript, everything that comes after the : but before an =
-  (assignment) is the type information
+    (assignment) is the type information
 * | is a pipe used to transform a value in your html
   * <h4>{{ product.price | currency }}</h4>, uses the currency pipe to transform
-  product.price from a number to a currency string
+    product.price from a number to a currency string
 * In Angular, a service is an instance of a class that you can make available to
   any part of your application
+* Use the HttpClient to make HTTP requests
+  * To register Angular's HttpClient providers globally, add HttpClientModule to
+    the AppModule @NgModule() imports array.
+* async pipe returns the latest value from a stream of data and continues to do
+  so for the life of a given component.
 
 
 Thoughts
 --------
 Probably a good idea to define properties at the top of each class, then the
 standard functions and finally all the rest of the functions
+
+Add modules by importing the module in the app.module.ts file and adding the
+module to the AppModule @NgModule() imports array. These modules can now be
+imported into components?
