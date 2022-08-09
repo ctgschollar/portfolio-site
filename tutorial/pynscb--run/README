@@ -6,6 +6,8 @@ Useful commands
 ng generate component product-alerts
 #Generate a basic Angular application with an application routing module
 ng new routing-app --routing --defaults
+#Generate a new service (called CartService)
+ng generate service cart
 
 Some useful Info
 ----------------
@@ -34,6 +36,8 @@ Some useful Info
 * | is a pipe used to transform a value in your html
   * <h4>{{ product.price | currency }}</h4>, uses the currency pipe to transform
   product.price from a number to a currency string
+* In Angular, a service is an instance of a class that you can make available to
+  any part of your application
 
 
 Thoughts
