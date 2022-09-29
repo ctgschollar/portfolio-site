@@ -1,0 +1,21 @@
+<app-list
+  [items]="items"
+  [itemsPerPage]="2"
+  [currentPage]="currentPage"
+>
+  <ng-template #item let-item="item">
+    <app-customer
+      (selected)="selected($event)"
+      (unselected)="unselected($event)"
+      [item]="item"
+      [isSelected]="isItemSelected(item)"
+    ></app-customer>
+  </ng-template>
+</app-list>
+
+<app-pagination
+  [currentPage]="currentPage"
+  [itemsLength]="items.length"
+  [itemsPerPage]="2"
+  (pageChanged)="currentPage = $event"
+></app-pagination>

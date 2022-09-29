@@ -1,0 +1,9 @@
+<div class="pages">
+  <div
+   *ngFor="let p of pages; let i = index"
+   class="page"
+   [class.selected]="i === currentPage"
+   (click)="pageChanged.emit(i)">
+   {{ i }}
+  </div>
+</div>
