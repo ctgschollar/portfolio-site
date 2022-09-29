@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
+  // could make this a service??
   async typewriter(property: keyof HeaderComponent, text:string, period:number): Promise<void> {
     let sleepPeriod: number = period / text.length * 1000;
     for (let i = 0; i < 4; i++) {

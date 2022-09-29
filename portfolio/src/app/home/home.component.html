@@ -1,1 +1,5 @@
-<p>home works!</p>
+<div *ngFor = "let component of this.components" class="container">
+  <div class="sep"></div>
+  <app-base [name]="component.name" [cls]="component.cls" [height]="component.height"></app-base>
+</div>
+<div class="sep"></div>

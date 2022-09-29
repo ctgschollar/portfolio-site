@@ -3,6 +3,15 @@
   color: #ECDBBA;
 }
 
+.terminal-light {
+  background-color: #ECDBBA;
+  color: #28292D;
+}
+
+.bookend {
+  background-color: #C84B31;
+}
+
 .roboto {
   font-family: 'Roboto Mono', monospace;
 }
