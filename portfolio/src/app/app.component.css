@@ -1,0 +1,41 @@
+.terminal-dark {
+  background-color: #28292D;
+  color: #ECDBBA;
+}
+
+.roboto {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.title {
+  font-size: 60px;
+  height: 100px;
+}
+
+.nav {
+  font-size: 25px;
+}
+
+.nav:hover {
+  color: #C84B31;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  display: flex;
+}
+
+.wrap span {
+  align-self: flex-end;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.blue {
+  background-color: blue;
+}
