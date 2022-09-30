@@ -1,5 +1,7 @@
 # ComponentComposition
 
+Grabbed from https://blog.bitsrc.io/component-reusability-techniques-with-angular-727a6c603ad2
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
 
 ## Development server

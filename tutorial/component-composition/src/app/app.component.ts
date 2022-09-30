@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Item } from './common/item';
+import { CustomersService } from '../customers.service'
 
 @Component({
   selector: 'app-root',
@@ -8,20 +9,20 @@ import { Item } from './common/item';
 })
 export class AppComponent {
   title = 'component-composition';
-  customers = [
-    { display: "Big Bank", value: 1 },
-    { display: "Small Startup", value: 2 },
-    { display: "Medium Great Shop", value: 3 },
-    { display: "Big Bank 2", value: 4 },
-    { display: "Small Startup 2", value: 5 },
-    { display: "Medium Great Shop 2", value: 6 }
-  ];
+  customers: Item[];
+
+  constructor () {
+    let cs = new CustomersService();
+    this.customers = cs.getCustomers()
+  }
 
   onSelected(item: Event) {
+    console.log("app");
     console.log('selected', item)
   }
 
    onUnselected(item: Event) {
-    console.log('unselected', item)
+     console.log("app");
+     console.log('unselected', item)
   }
 }
