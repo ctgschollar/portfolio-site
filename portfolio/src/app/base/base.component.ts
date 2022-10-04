@@ -11,6 +11,8 @@ export class BaseComponent implements OnInit {
   @Input() item: Item;
 
   ngOnInit(): void {
+    console.log("base");
+    console.log(this.item.name);
   }
 
 }

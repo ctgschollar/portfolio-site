@@ -1,3 +1,4 @@
-<div [ngClass]="'container background ' + item.cls" [ngStyle]="{ 'height': item.height }">
+<div [ngClass]="item.cls + ' container background'" [ngStyle]="{ 'height': item.height }">
   {{item.name}}
+  <app-splash *ngIf="item.name === 'splash'" [item]="item"></app-splash>
 </div>

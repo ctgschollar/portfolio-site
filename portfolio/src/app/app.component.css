@@ -1,11 +1,13 @@
 .terminal-dark {
   background-color: #28292D;
   color: #ECDBBA;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .terminal-light {
   background-color: #ECDBBA;
   color: #28292D;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .bookend {
@@ -19,6 +21,10 @@
 .title {
   font-size: 60px;
   height: 100px;
+}
+
+.H1 {
+  font-size: 25px;
 }
 
 .nav {

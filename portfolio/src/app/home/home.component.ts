@@ -18,6 +18,12 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     console.log("home");
     console.log(this.components);
+    console.log(this.template);
+  }
+
+  ngAfterContentInit(): void {
+    console.log(this.template)
+    // this.template.createEmbeddedView({ item: this.components[0] })
   }
 
 }

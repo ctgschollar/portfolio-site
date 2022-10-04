@@ -10,7 +10,7 @@ export class ComponentsService {
   getComponents() {
     return [
       {
-        name:"hook",
+        name:"splash",
         height:"800px",
         cls:"terminal-dark"
       },
