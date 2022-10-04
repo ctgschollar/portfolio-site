@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { Item } from '../common/component';
 
 @Component({
   selector: 'app-base',
@@ -8,13 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BaseComponent implements OnInit {
 
-  @Input() name: string;
-  @Input() height: string;
-  @Input() cls: string;
-
-  constructor() {
-    this.name = "base";
-  }
+  @Input() item: Item;
 
   ngOnInit(): void {
   }

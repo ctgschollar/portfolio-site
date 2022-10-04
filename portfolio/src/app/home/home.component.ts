@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { BaseComponent } from '../base/base.component';
+import { Component, OnInit, ContentChild, TemplateRef, Input } from '@angular/core';
+import { Item } from '../common/component';
 
 @Component({
   selector: 'app-home',
@@ -8,48 +8,16 @@ import { BaseComponent } from '../base/base.component';
 })
 export class HomeComponent implements OnInit {
 
-  components: {
-    name: string,
-    height:string
-    cls:string
-  } [];
+  @Input()
+  components:  Item[];
 
-  constructor() {
-    this.components = [
-      {
-        name:"hook",
-        height:"800px",
-        cls:"terminal-dark"
-      },
-      {
-        name:"book",
-        height:"100px",
-        cls:"bookend"
-      },
-      {
-        name:"services",
-        height:"800px",
-        cls:"terminal-light"
-      },
-      {
-        name:"tools",
-        height:"100px",
-        cls:"bookend"
-      },
-      {
-        name:"portfolio",
-        height:"800px",
-        cls:"terminal-dark",
-      },
-      {
-        name:"contact",
-        height:"100px",
-        cls:"bookend"
-      }
-    ];
-  }
+  @ContentChild('item', { static: false })
+  template: TemplateRef<any>;
+
 
   ngOnInit(): void {
+    console.log("home");
+    console.log(this.components);
   }
 
 }

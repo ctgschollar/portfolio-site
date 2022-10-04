@@ -7,13 +7,17 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BaseComponent } from './base/base.component';
+import { SplashComponent } from './splash/splash.component';
+import { StructureComponent } from './structure/structure.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    BaseComponent
+    BaseComponent,
+    SplashComponent,
+    StructureComponent
   ],
   imports: [
     BrowserModule,

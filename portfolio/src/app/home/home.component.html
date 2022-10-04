@@ -1,5 +1,8 @@
-<div *ngFor = "let component of this.components" class="container">
+<div *ngFor = "let item of components" class="container">
   <div class="sep"></div>
-  <app-base [name]="component.name" [cls]="component.cls" [height]="component.height"></app-base>
+  <ng-container
+   *ngTemplateOutlet="template; context: { item: item }"
+  >
+  </ng-container>
 </div>
 <div class="sep"></div>
