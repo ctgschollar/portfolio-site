@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Entry } from 'contentful';
 import { Item } from '../common/component';
+import { ContentfulService } from '../contentful.service';
 
 @Component({
   selector: 'app-base',
@@ -10,15 +12,11 @@ export class BaseComponent implements OnInit {
 
   @Input() item: Item;
 
+  constructor(public contentfulService: ContentfulService) { }
+
   ngOnInit(): void {
     console.log("base");
     console.log(this.item.name);
   }
 
 }
-
-/*Usage
-cls is some css class that is defined for this component
-
-<app-base [name]="component.name" [cls]="component.cls" [height]="component.height"></app-base>
-*/

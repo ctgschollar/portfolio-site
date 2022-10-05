@@ -10,32 +10,32 @@ export class ComponentsService {
   getComponents() {
     return [
       {
-        name:"splash",
+        name:"splash", //SplashComponent
         height:"800px",
         cls:"terminal-dark"
       },
       {
-        name:"book",
+        name:"book", //BannerComponent
         height:"100px",
         cls:"bookend"
       },
       {
-        name:"services",
+        name:"services", //GridComponent
         height:"800px",
         cls:"terminal-light"
       },
       {
-        name:"tools",
+        name:"tools", //BannerComponent
         height:"100px",
         cls:"bookend"
       },
       {
-        name:"portfolio",
+        name:"portfolio", //GridComponent
         height:"800px",
         cls:"terminal-dark",
       },
       {
-        name:"contact",
+        name:"contact", //BannerComponent
         height:"100px",
         cls:"bookend"
       }

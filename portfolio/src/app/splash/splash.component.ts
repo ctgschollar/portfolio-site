@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BaseComponent } from '../base/base.component';
+import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-splash',
@@ -7,13 +8,21 @@ import { BaseComponent } from '../base/base.component';
   styleUrls: ['./splash.component.css', '../app.component.css']
 })
 export class SplashComponent extends BaseComponent {
-  //
-  // constructor() {
-  //   super();
-  //   // this.name = "splash";
-  // }
 
-  // ngOnInit(): void {
-  // }
+  protected splashImage: string;
+  protected splashText: string[];
+
+  override ngOnInit(): void {
+    this.contentfulService.getSplashContent()
+    .then(splashContent => {
+      this.extractContent(splashContent);
+    })
+  }
+
+  extractContent(content:Entry<any>[]) : void {
+    this.splashText=content[0].fields.splashText.split("\n");
+    this.splashImage=content[0].fields.splashImage.fields.file.url;
+  }
+
 
 }

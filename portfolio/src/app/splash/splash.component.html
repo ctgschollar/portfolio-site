@@ -1,11 +1,8 @@
 <div class="row h-100 align-items-center justify-content-center">
   <div class="mt-5">
-    <img class="mx-auto d-block" src="/assets/images/circle.png">
+    <img class="mx-auto d-block" [src]="splashImage">
   </div>
   <div class="H1 mb-5">
-    <span class="d-flex justify-content-center">Hi, I'm Christopher Schollar</span>
-    <span class="d-flex justify-content-center">A Full Stack Developer</span>
-    <span class="d-flex justify-content-center">With a passion for testing and deployment</span>
-    <span class="d-flex justify-content-center">For your peace of mind</span>
+    <span *ngFor="let line of splashText" class="d-flex justify-content-center">{{line}}</span>
   </div>
 <div>
