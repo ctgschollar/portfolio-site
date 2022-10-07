@@ -1,5 +1,13 @@
 export interface Item {
   name: string,
-  height:string
-  cls:string
+  type: string,
+  height:string,
+  cls:string,
+  blockWidth?:number
+}
+
+export interface Block {
+  title: string,
+  text?: string[],
+  image?:any,
 }

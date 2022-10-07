@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BaseComponent } from './base/base.component';
 import { SplashComponent } from './splash/splash.component';
 import { StructureComponent } from './structure/structure.component';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { StructureComponent } from './structure/structure.component';
     HomeComponent,
     BaseComponent,
     SplashComponent,
-    StructureComponent
+    StructureComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,

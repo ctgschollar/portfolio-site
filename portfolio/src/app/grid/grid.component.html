@@ -1,0 +1,13 @@
+<div class="d-flex row h-100">
+  <div *ngFor="let block of blocks" [class]="'mh-100 col-' + blockWidth">
+    <div *ngIf="block.text">
+      <H2>{{block.title}}</H2>
+      <p>
+      <div *ngFor="let line of block.text">
+        <span>{{line}}</span>
+        <p>
+      </div>
+    </div>
+    <img *ngIf="block.image" [src]="block.image.fields.file.url" class="mh-100 w-100 img-fluid">
+  </div>
+</div>
