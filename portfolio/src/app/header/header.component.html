@@ -1,13 +1,12 @@
-<div class="container-xxl terminal-dark roboto">
-  <div class="row terminal-dark roboto d-flex justify-content-md-between justify-content-end">
-    <div class="title col text-primary">
-      <span>{{title}}</span>
+<div class="container-lg roboto">
+  <div class="row bg-secondary d-flex justify-content-md-between justify-content-end pb-3">
+    <div class="col title">
+      <h1 class="display-2 text-primary">{{title}}</h1>
     </div>
-    <div class="col-lg-4 col-sm col-md col-8 d-flex flex-lg-row flex-md-column flex-sm-column flex-row justify-content-between">
+    <div class="col-lg-4 col-sm col-md col-xs-8 col d-flex flex-lg-row flex-md-column flex-sm-column flex-row justify-content-between">
         <div *ngFor="let component of components" class="nav align-items-end justify-content-end">
-          <a [href]="'#'+component.name">{{component.name}}</a>
+          <a [href]="'#'+component.name"><h6 class="primary-6">{{component.name}}</h6></a>
         </div>
     </div>
-    <div>
   </div>
 </div>
