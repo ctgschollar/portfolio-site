@@ -19,8 +19,8 @@
 }
 
 .title {
-  font-size: 60px;
-  height: 100px;
+  font-size: 50px;
+  height: 80px;
 }
 
 .H1 {
@@ -28,11 +28,17 @@
 }
 
 .nav {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.nav:hover {
+.nav a {
+  color: #ECDBBA;
+  text-decoration: none;
+}
+
+.nav a:hover {
   color: #C84B31;
+  text-decoration: none;
 }
 
 .flex {

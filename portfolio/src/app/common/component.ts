@@ -4,6 +4,7 @@ export interface Item {
   height:string,
   cls:string,
   blockWidth?:number
+  navigable?: boolean
 }
 
 export interface Block {

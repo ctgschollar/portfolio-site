@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Item } from './common/component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ComponentsService {
 
-  constructor() { }
+  components: Item[];
 
-  getComponents() {
-    return [
+  constructor() {
+    this.components= [
       {
         name:"splash", //SplashComponent
         type:"splash",
@@ -26,7 +27,8 @@ export class ComponentsService {
         name:"services", //GridComponent
         type:"grid",
         height:"800px",
-        cls:"terminal-light"
+        cls:"terminal-light",
+        navigable:true
       },
       {
         name:"tools", //BannerComponent
@@ -40,14 +42,24 @@ export class ComponentsService {
         type:"grid",
         height:"800px",
         cls:"terminal-dark",
+        navigable:true
       },
       {
         name:"contact", //BannerComponent
         type:"banner",
         height:"100px",
-        cls:"bookend"
+        cls:"bookend",
+        navigable:true
       }
     ];
+  }
+
+  getNavComponents() {
+    return this.components.filter(c => c.navigable);
+  }
+
+  getComponents(): Item[] {
+    return this.components;
   }
 
 }

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Item } from '../common/component'
+import { ComponentsService } from '../components.service';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  components: Item[];
   title: string;
 
-  constructor() {
-    this.title="test";
+  constructor(  ) {
+    let cs = new ComponentsService();
+    this.components = cs.getNavComponents();
   }
 
   ngOnInit(): void {
