@@ -1,8 +1,12 @@
-<div class="row h-100 align-items-center justify-content-center">
-  <div class="mt-5">
-    <img class="mx-auto d-block" [src]="splashImage">
+<div class="container d-flex justify-content-center">
+  <div class="d-flex min-vh-75">
+    <div class="row align-items-center justify-content-center">
+      <div class="m-5">
+        <img class="mx-auto d-block img-fluid" [src]="splashImage">
+      </div>
+      <div class="m-5 mt-3 text-center">
+        <span *ngFor="let line of splashText" class="">{{line}}<p></span>
+      </div>
+    <div>
   </div>
-  <div class="H1 mb-5">
-    <span *ngFor="let line of splashText" class="d-flex justify-content-center">{{line}}</span>
-  </div>
-<div>
+</div>

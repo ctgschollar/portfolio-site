@@ -14,41 +14,41 @@ export class ComponentsService {
         name:"splash", //SplashComponent
         type:"splash",
         height:"800px",
-        cls:"terminal-dark"
+        cls:"bg-secondary text-primary min-vh-75",
       },
       {
         name:"book", //BannerComponent
         type:"banner",
         height:"100px",
-        cls:"bookend",
+        cls:"bg-info text-secondary min-vh-10",
         blockWidth:12
       },
       {
         name:"services", //GridComponent
         type:"grid",
         height:"800px",
-        cls:"terminal-light",
+        cls:"bg-primary text-secondary",
         navigable:true
       },
       {
         name:"tools", //BannerComponent
         type:"grid",
         height:"100px",
-        cls:"bookend",
+        cls:"bg-info text-secondary",
         blockWidth:2
       },
       {
         name:"portfolio", //GridComponent
         type:"grid",
         height:"800px",
-        cls:"terminal-dark",
+        cls:"bg-secondary text-primary",
         navigable:true
       },
       {
         name:"contact", //BannerComponent
         type:"banner",
         height:"100px",
-        cls:"bookend",
+        cls:"bg-info text-secondary",
         navigable:true
       }
     ];

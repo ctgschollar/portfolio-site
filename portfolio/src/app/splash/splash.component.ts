@@ -5,7 +5,7 @@ import { Entry } from 'contentful';
 @Component({
   selector: 'app-splash',
   templateUrl: './splash.component.html',
-  styleUrls: ['./splash.component.css', '../app.component.css']
+  styleUrls: ['./splash.component.css']
 })
 export class SplashComponent extends BaseComponent {
 

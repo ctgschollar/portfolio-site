@@ -1,18 +1,3 @@
-.terminal-dark {
-  background-color: #28292D;
-  color: #ECDBBA;
-  font-family: 'Ubuntu Mono', monospace;
-}
-
-.terminal-light {
-  background-color: #ECDBBA;
-  color: #28292D;
-  font-family: 'Ubuntu Mono', monospace;
-}
-
-.bookend {
-  background-color: #C84B31;
-}
 
 .roboto {
   font-family: 'Roboto Mono', monospace;
@@ -22,8 +7,16 @@
   height: 5rem;
 }
 
+.min-vh-75 { min-height: 75vh; }
+
+.min-vh-50 { min-height: 50vh; }
+
+.min-vh-25 { min-height: 25vh; }
+
+.min-vh-10 { min-height: 10vh; }
+
 .nav {
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .nav a {
@@ -34,10 +27,6 @@
 .nav a:hover {
   color: #C84B31;
   text-decoration: none;
-}
-
-.flex {
-  display: flex;
 }
 
 .wrap {

@@ -6,7 +6,7 @@ import { ContentfulService } from '../contentful.service';
 @Component({
   selector: 'app-base',
   templateUrl: './base.component.html',
-  styleUrls: ['./base.component.css', '../app.component.css']
+  styleUrls: ['./base.component.css']
 })
 export class BaseComponent implements OnInit {
 
