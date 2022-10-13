@@ -1,13 +1,15 @@
-<div class="d-flex row h-100">
-  <div *ngFor="let block of blocks" [class]="'mh-100 col-' + blockWidth">
-    <div *ngIf="block.text">
-      <H2>{{block.title}}</H2>
-      <p>
-      <div *ngFor="let line of block.text">
-        <span>{{line}}</span>
-        <p>
+<div class="row h-100">
+  <H1 class="text-capitalize display-4 col-12 m-3">{{item.name}}</H1>
+  <div *ngFor="let block of blocks" class="card col-lg-6 col-12 pb-3 border-0">
+    <div class="card-body">
+      <h3 class="card-title">{{block.title}}</h3>
+      <div clas="card-text">
+        <div *ngFor="let line of block.text">
+          <span>{{line}}</span>
+          <p>
+        </div>
       </div>
     </div>
-    <img *ngIf="block.image" [src]="block.image.fields.file.url" class="mh-100 w-100 img-fluid">
+    <img *ngIf="block.image" [src]="block.image.fields.file.url" class="card-img-bottom">
   </div>
 </div>

@@ -32,7 +32,7 @@ export class ComponentsService {
       },
       {
         name:"tools", //BannerComponent
-        type:"grid",
+        type:"icons",
         height:"100px",
         cls:"bg-info text-secondary",
         blockWidth:2
@@ -48,7 +48,7 @@ export class ComponentsService {
         name:"contact", //BannerComponent
         type:"banner",
         height:"100px",
-        cls:"bg-info text-secondary",
+        cls:"bg-info text-secondary min-vh-10",
         navigable:true
       }
     ];
