@@ -18,7 +18,7 @@ export class ComponentsService {
       },
       {
         name:"book", //BannerComponent
-        type:"banner",
+        type:"temp",
         height:"100px",
         cls:"bg-info text-secondary min-vh-10",
         blockWidth:12
@@ -32,7 +32,7 @@ export class ComponentsService {
       },
       {
         name:"tools", //BannerComponent
-        type:"icons",
+        type:"banner",
         height:"100px",
         cls:"bg-info text-secondary",
         blockWidth:2
@@ -46,7 +46,7 @@ export class ComponentsService {
       },
       {
         name:"contact", //BannerComponent
-        type:"banner",
+        type:"temp",
         height:"100px",
         cls:"bg-info text-secondary min-vh-10",
         navigable:true

@@ -1,4 +1,5 @@
 <div [ngClass]="item.cls + ' background row align-items-center'" [id]="item.name">
   <app-splash *ngIf="item.type === 'splash'" [item]="item"></app-splash>
+  <app-banner *ngIf="item.type === 'banner'" [item]="item"></app-banner>
   <app-grid *ngIf="item.type === 'grid'" [item]="item"></app-grid>
 </div>

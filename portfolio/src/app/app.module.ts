@@ -10,6 +10,7 @@ import { BaseComponent } from './base/base.component';
 import { SplashComponent } from './splash/splash.component';
 import { StructureComponent } from './structure/structure.component';
 import { GridComponent } from './grid/grid.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GridComponent } from './grid/grid.component';
     BaseComponent,
     SplashComponent,
     StructureComponent,
-    GridComponent
+    GridComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

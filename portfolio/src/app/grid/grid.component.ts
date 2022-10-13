@@ -19,8 +19,8 @@ export class GridComponent extends BaseComponent {
       this.blockWidth = this.item.blockWidth;
     }
     this.contentfulService.getEntryContent(this.item.name)
-    .then(splashContent => {
-      this.extractContent(splashContent);
+    .then(content => {
+      this.extractContent(content);
     })
   }
 
