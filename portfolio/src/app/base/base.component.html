@@ -1,6 +1,4 @@
-<div [ngClass]="item.cls + ' container background'" [id]="item.name">
+<div [ngClass]="item.cls + ' background row align-items-center'" [id]="item.name">
   <app-splash *ngIf="item.type === 'splash'" [item]="item"></app-splash>
   <app-grid *ngIf="item.type === 'grid'" [item]="item"></app-grid>
 </div>
-
-<!-- [ngStyle]="{ 'height': item.height }"  -->
